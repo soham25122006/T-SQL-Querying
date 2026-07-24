@@ -29,12 +29,12 @@ SELECT EOMONTH(GETDATE())
 SELECT DATEDIFF(YEAR,'2006-12-25',GETDATE()),DATEDIFF(MONTH,'2006-12-25',GETDATE())
 
 --Part – B: Perform following queries on DEPOSIT table.
+
 SELECT * FROM DEPOSIT
 
 --14. Display all records where account date is in the year 2025.
 SELECT * FROM DEPOSIT
 WHERE YEAR(ADATE) = YEAR('2025')
-
 --15. Display all records where account date is in the month of March.
 SELECT * FROM DEPOSIT
 WHERE MONTH(ADATE) = 3;
